@@ -20,7 +20,7 @@ public class StateMachine
     //calls OnUpdate on the state themself
     public void Update()
     {
-        if(currentState != null) 
+        if (currentState != null)
         {
             currentState.Update();
         }

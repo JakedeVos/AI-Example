@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
@@ -47,7 +46,7 @@ public class AIController : MonoBehaviour
 
 
     public void ChangeState(State newState)
-    { 
+    {
         stateMachine.ChangeState(newState);
     }
 
@@ -68,7 +67,7 @@ public class AIController : MonoBehaviour
                 }
 
             }
-            
+
         }
         return false;
 
@@ -109,7 +108,7 @@ public class AIController : MonoBehaviour
 
     public void UpdateAwareness()
     {
-        if(CanSeePlayer())
+        if (CanSeePlayer())
         {
             awarenessLevel += 50 * Time.deltaTime;
         }
@@ -175,6 +174,7 @@ public class AIController : MonoBehaviour
         {
             waypointIndex = (waypointIndex + 1) % patrolWaypoints.Length;
         }
-            agent.SetDestination(patrolWaypoints[waypointIndex].position);
+        agent.SetDestination(patrolWaypoints[waypointIndex].position);
     }
 }
+

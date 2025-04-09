@@ -14,7 +14,7 @@ public class VisionConeTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             //Set is in vision cone to true
             ai.SetPlayerInVisionCone(true);
@@ -29,6 +29,7 @@ public class VisionConeTrigger : MonoBehaviour
             //Set is in vision cone to false
             ai.SetPlayerInVisionCone(false);
         }
-        
+
     }
 }
+
