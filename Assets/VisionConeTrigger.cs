@@ -19,6 +19,7 @@ public class VisionConeTrigger : MonoBehaviour
             //Set is in vision cone to true
             ai.SetPlayerInVisionCone(true);
             Debug.Log("Player Is In Cone!");
+           
         }
     }
 
