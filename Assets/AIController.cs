@@ -17,7 +17,7 @@ public class AIController : MonoBehaviour
     public float detectionRange = 3;
 
     //vision
-    private bool isPlayerInVisionCone = false;
+    public bool isPlayerInVisionCone = false;
     public float visionAngle = 120f;
 
     //hearing

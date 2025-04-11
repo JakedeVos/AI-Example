@@ -16,7 +16,7 @@ public class StatePatrol : State
 
     public override void Update()
     {
-        if (ai.CanSeePlayer())
+        if (ai.isPlayerInVisionCone)
         {
             ai.ChangeState(new StateChase(ai));
         }
